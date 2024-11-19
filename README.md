@@ -13,8 +13,8 @@
 
 → O exercicio 5 e o 6 foram feitos com o objetivo de fazer u
 
-→ No exercicio 7 foi ensinado sobre vetores em PHP (// Para cada 'produto' do vetor 'produtos'
-foreach ($produtos as $produto) {).
+→ No exercicio 7 foi ensinado sobre vetores em PHP. ```// Para cada 'produto' do vetor 'produtos'
+foreach ($produtos as $produto) {```
 
 → No exercicio 8 criamos um formulário de feedback simples em HTML e PHP que coleta nome, e-mail e mensagem do usuário, valida os dados e exibe uma confirmação de envio ou erro.
 
