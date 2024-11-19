@@ -18,4 +18,11 @@ foreach ($produtos as $produto) {).
 
 → No exercicio 8 criamos um formulário de feedback simples em HTML e PHP que coleta nome, e-mail e mensagem do usuário, valida os dados e exibe uma confirmação de envio ou erro.
 
-→ Do exercicío 9 ao 15 foi colocado o banco de dados junto do php.
+→ Do exercicío 9 ao 15 foi colocado o banco de dados junto do php;
+* 9: conexão do php com banco de dados;
+* 10: inserção de informações no banco de dados pelo php;
+* 11: listagem das informações armazenadas;
+* 12: atualizar alguma informação;
+* 13: excluir alguma informação;
+* 14: upload de arquivos/imagens;
+* 15: página de login, página restrita e página de logout.
