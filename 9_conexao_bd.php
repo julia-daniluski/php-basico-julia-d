@@ -1,4 +1,8 @@
 <?php
+// db: CREATE DATABASE exercicio; 
+// USE exercicio;
+//CREATE TABLE clientes ( id INT AUTO_INCREMENT PRIMARY KEY, nome VARCHAR(100) NOT NULL, email VARCHAR(100) NOT NULL );
+
 // ALTERAR de acordo com o número da porta
 // verificar conexão com o XAMPP
 $servername = "localhost:3306";
