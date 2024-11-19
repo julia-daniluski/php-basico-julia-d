@@ -12,8 +12,8 @@ if ($conn->connect_error) {
     die("Falha na conexão: " . $conn->connect_error);
 }
 
-// Consulta os dados da tabela clientes
-$sql = "SELECT id, nome, email FROM clientes";
+// Consulta os dados da tabela clientes, incluindo o telefone
+$sql = "SELECT id, nome, email, telefone FROM clientes";
 $result = $conn->query($sql);
 
 // Verifica se existem registros e os exibe em formato de tabela 
@@ -24,14 +24,15 @@ if ($result->num_rows > 0) {
     echo "<table border='2'>";
     
     // Define cabeçalho da tabela
-    echo "<tr><th>ID</th><th>Nome</th><th>Email</th></tr>";
+    echo "<tr><th>Nome</th><th>Email</th><th>Telefone</th></tr>";
 
     // Enquanto houver dados, exibe cada linha
     while ($row = $result->fetch_assoc()) {
         echo "<tr>";
-        echo "<td>" . $row['id'] . "</td>";
-        echo "<td>" . $row['nome'] . "</td>";
-        echo "<td>" . $row['email'] . "</td>";
+        // Escapa os dados antes de exibir para evitar XSS
+        echo "<td>" . htmlspecialchars($row['nome']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['email']) . "</td>";
+        echo "<td>" . htmlspecialchars($row['telefone']) . "</td>";
         echo "</tr>";
     }
     echo "</table>";
