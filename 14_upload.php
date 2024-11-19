@@ -7,7 +7,7 @@
 <body>
     <h2>Armazenar imagens</h2>
     
-    <!-- Formulário com método POST e enctype multipart/form-data -->
+    <!-- Formulário com método POST e enctype multipart/form-data (este valor é necessario se o usuario for mandar algum arquivo pelo formulario) -->
     <form method="post" action="" enctype="multipart/form-data">
         <label for="imagem">Selecione uma imagem:</label>
         <br><br>
