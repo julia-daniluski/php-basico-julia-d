@@ -29,6 +29,7 @@
         $username = "root";
         $password = "";  // Se não houver senha para o MySQL
         $dbname = "exercicio";
+        // INCLUDE *nome do arquivo* ou REQUIRE
         
         // Criação da conexão
         $conn = new mysqli($servername, $username, $password, $dbname);
