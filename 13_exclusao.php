@@ -13,7 +13,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verifica a conexão
 if ($conn->connect_error) {
-    die("Falha na conexão: " . $conn->connect_error);  // Corrigido: concatenar a mensagem de erro
+    die("Falha na conexão: " . $conn->connect_error);  
 }
 
 // Verifica se um ID foi passado via URL para exclusão
@@ -27,7 +27,7 @@ if (isset($_GET['id'])) {
     if ($conn->query($sql) === TRUE) {
         echo "<p>Cliente excluído com sucesso!</p>";
     } else {
-        echo "<p>Erro ao excluir cliente: " . $conn->error . "</p>";  // Corrigido: concatenar o erro corretamente
+        echo "<p>Erro ao excluir cliente: " . $conn->error . "</p>";  
     }
 }
 
