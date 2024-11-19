@@ -27,9 +27,10 @@
         // Conecta ao banco de dados
         $servername = "localhost";
         $username = "root";
-        $password = "";
+        $password = "";  // Se não houver senha para o MySQL
         $dbname = "exercicio";
-
+        
+        // Criação da conexão
         $conn = new mysqli($servername, $username, $password, $dbname);
 
         // Verifica a conexão
@@ -37,10 +38,20 @@
             die("Falha na conexão: " . $conn->connect_error);
         }
 
+        // Insere o registro no banco de dados
+        $sql = "INSERT INTO clientes (nome, email) VALUES ('$nome', '$email')";
 
-        // Digitar PHP + SQL (1º Aqui)
+        // Confere se a variável 'sql' está correta
+        if ($conn->query($sql) === TRUE) {
+            // Exibe a mensagem de sucesso
+            echo "<p style='color: green;'>Cliente cadastrado com sucesso!</p>";
+        } else {
+            // Exibe a mensagem de erro
+            echo "<p style='color: red;'>Erro ao cadastrar: " . $conn->error . "</p>";
+        }
 
-
+        // Encerra a conexão
+        $conn->close();
     }
     ?>
 </body>
