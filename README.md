@@ -22,7 +22,7 @@ foreach ($produtos as $produto) {```
 * 9: conexão do php com banco de dados;
 * 10: inserção de informações no banco de dados pelo php;
 * 11: listagem das informações armazenadas;
-* 12: atualizar alguma informação;
+* 12: atualizar alguma informação (ADICIONAR "?id=" NO URL PARA CONSEGUIR ALTERAR);
 * 13: excluir alguma informação;
 * 14: upload de arquivos/imagens;
 * 15: página de login, página restrita e página de logout.
