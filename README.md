@@ -23,6 +23,6 @@ foreach ($produtos as $produto) {```
 * 10: inserção de informações no banco de dados pelo php;
 * 11: listagem das informações armazenadas;
 * 12: atualizar alguma informação (ADICIONAR "?id=" NO URL PARA CONSEGUIR ALTERAR);
-* 13: excluir alguma informação;
+* 13: excluir alguma informação (ADICIONAR "?id=" NO URL PARA CONSEGUIR EXCLUIR);
 * 14: upload de arquivos/imagens;
 * 15: página de login, página restrita e página de logout.
